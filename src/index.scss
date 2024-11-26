@@ -1,0 +1,34 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+
+}
+.container{
+  max-width: 1202px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 16px;
+}
+
+.container-lg{
+  max-width: 1270px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 16px;
+}
+
+a{
+  text-decoration: none;
+  color:inherit
+}
+
+li{
+  list-style: none;
+
+}
+
+img{
+  max-width: 100%;
+}

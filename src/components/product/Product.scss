@@ -1,0 +1,139 @@
+.pproduct__wrapper {
+  background: #14110e;
+  padding-bottom: 100px;
+  .pproduct {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 65px 0;
+    color: white;
+    &__btn {
+      button {
+        font-size: 18px;
+        font-weight: 700;
+        line-height: 22px;
+        padding: 20px 36px;
+        background: #c99e71;
+        color: white;
+        border-radius: 5px;
+        cursor: pointer;
+        &:hover {
+          background: dodgerblue;
+        }
+      }
+    }
+    &__content {
+      width: 100%;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      h3 {
+        font-weight: 400;
+        font-size: 48px;
+        line-height: 62px;
+      }
+    }
+    span {
+      font-weight: 600;
+      font-size: 18px;
+      line-height: 21px;
+      color: #c99e71;
+    }
+    &__images {
+      width: 100%;
+      display: flex;
+      justify-content: space-around;
+      gap: 16px;
+    }
+    &__item {
+      transition: all 0.2s ease;
+      width: auto;
+      height: auto;
+      display: flex;
+      flex-direction: column;
+      gap: 38px;
+      span .star {
+        margin-right: 5px;
+      }
+      em {
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 21px;
+      }
+      p {
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 29px;
+      }
+      &:hover {
+        transform: scale(1.03);
+      }
+    }
+    &__images .pproduct__item:first-child {
+      .btn {
+        cursor: pointer;
+        padding: 13px 20px 13px 0;
+        color: white;
+        border: none;
+        background: #c99e71;
+        font-size: 18px;
+        line-height: 21px;
+        font-weight: 600;
+        align-items: center;
+        border-radius: 5px;
+        display: flex;
+        justify-content: center;
+        gap: 12px;
+        align-items: center;
+        width: 170px;
+        margin: 0 auto;
+        svg {
+          transform: translateY(-1px);
+        }
+        button {
+          cursor: pointer;
+          color: white;
+          font-size: 18px;
+          border: none;
+          background: #c99e71;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 900px) {
+  .pproduct__wrapper {
+    .pproduct {
+      &__images {
+        gap: 50px;
+        flex-wrap: wrap;
+      }
+    }
+  }
+}
+@media (max-width: 700px) {
+  .pproduct__wrapper {
+    .pproduct {
+      .pproduct__content {
+        h3 {
+          font-size: 35px;
+        }
+      }
+      .pproduct__item {
+        p {
+          font-size: 20px;
+        }
+      }
+      .pproduct__btn {
+        button {
+          font-size: 15px;
+          border: none;
+          padding: 10px 20px;
+        }
+      }
+    }
+  }
+}
